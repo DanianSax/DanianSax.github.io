@@ -1,0 +1,237 @@
+/*General CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #878787;
+}
+h2{
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+p{
+    text-align: justify;
+}
+section{
+    padding: 15px 100px 20px 150px;
+    border-bottom: 1px solid black;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:any-link{
+    color: black;    
+}
+a:wekit-any-link{
+    color: black;
+}
+a:-moz-any-link{
+    color: black;
+}
+a:hover{
+    color: #4c4c4c;
+}
+li{
+    float: left;
+}
+button:hover{
+    color: whitesmoke;
+}
+input:hover{
+    color: whitesmoke;
+}
+#logo{
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+/* Section CSS */
+/* NavBar */
+nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    background-color: #B56B13;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul,footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li, footer ul li{
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Start */
+#start{
+    padding-top: 200px;
+    background-image: url("../images/Background_1280x400_texto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    max-height: 400px;
+    max-width: 1280;
+    align-content: end;
+}
+#socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 30px;
+}
+#socials li{
+    margin-right: 10px;
+}
+/* About Me */
+#about-me{
+    display: flex;
+    flex-direction: column;
+}
+#about-me-content{
+    display: flex;
+    gap: 40px;
+}
+#about-me-content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Projects */
+#projects{
+    background-color: #4c4c4c;
+}
+#projects h2{
+    color: white;
+}
+#projects-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 30px;
+}
+.projects-cards{
+    background-color: #878787;
+    width: 300px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+.projects-cards img{
+    border-radius: 15px 15px 0px 0px;
+}
+.projects-cards h3{
+    margin: 5px 10px 5px 10px;
+}
+.projects-cards p{
+    margin: 5px 10px 5px 10px;
+    min-height: 80px;
+}
+.projects-cards .know-more{
+    display: flex;
+    justify-content: center;
+}
+.projects-cards .know-more button{
+    background-color: #B56B13;
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 700;
+    border: 3px solid black;
+}
+/* Media */
+#grid-media{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.media-cards{
+    justify-self: center;
+}
+.media-cards iframe{
+    width: 300px;
+    height: 200px;
+}
+#link-YT{
+    display: flex;
+    justify-content: center;
+}
+#link-YT button{
+    background-color: #B56B13;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#link-YT i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+/* Contact */
+#contact{
+    background-color: black;
+    background-image: url("../images/Contactar_back_300.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#contact h2{
+    color: white;
+}
+.item-form{
+    display: grid;
+    grid-template-columns: 100px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#contact label{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+.item-form input,.item-form textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    border: 1px solid #222;
+    border-radius: 20px;
+    width: 100px;
+    background-color: #B56B13;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
